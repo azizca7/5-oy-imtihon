@@ -55,7 +55,7 @@ royxatdanOtishLink &&
 kirishForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const email = document.querySelector("form.kirish input[type='text']").value;
+  const email = document.querySelector("form.kirish input").value;
   const password = document.querySelector(
     "form.kirish input[type='password']"
   ).value;
