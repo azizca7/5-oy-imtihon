@@ -65,7 +65,7 @@ kirishForm.addEventListener("submit", (e) => {
 
   if (validate(email, password)) {
     if (email === storedEmail && password === storedPassword) {
-      window.location.href = "http://127.0.0.1:5500/pages/home.html";
+      window.location.href = "/pages/home.html";
     } else {
       alert("Noto'g'ri email yoki parol!");
     }
@@ -86,6 +86,6 @@ royxatdanOtishForm.addEventListener("submit", (e) => {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
 
-    window.location.href = "http://127.0.0.1:5500/index.html";
+    window.location.href = "/index.html";
   }
 });
