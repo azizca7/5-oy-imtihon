@@ -86,6 +86,6 @@ royxatdanOtishForm.addEventListener("submit", (e) => {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
 
-    window.location.href = "http://127.0.0.1:5500/pages/index.html";
+    window.location.href = "http://127.0.0.1:5500/index.html";
   }
 });
