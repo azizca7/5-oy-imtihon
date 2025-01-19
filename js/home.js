@@ -1,3 +1,21 @@
+document.getElementById("searchInput").addEventListener("input", function () {
+  const searchText = this.value.toLowerCase();
+  const bookCards = document.querySelectorAll(".card1");
+
+  bookCards.forEach((card) => {
+    const title = card.querySelector("p span").textContent.toLowerCase();
+    const author = card
+      .querySelector("p:nth-child(2) span")
+      .textContent.toLowerCase();
+
+    if (title.includes(searchText) || author.includes(searchText)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+
 fetch("https://trello.vimlc.uz/books")
   .then((response) => response.json())
   .then((data) => {
