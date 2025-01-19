@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a href="https://book.uz/" target="_blank">
+            <img src="../images/logo.svg" alt="logo" />
+          </a>
+          <p>Shaxsiy Kitobxonlik Dasturi</p>
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="tel:+998913244100">+998 91 324 41 00</a></li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  src="../images/facebook_icon.png"
+                  alt="Facebook"
+                  width="30px"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ikromov._a7" target="_blank">
+                <img
+                  src="../images/instagram_icon.png"
+                  alt="Instagram"
+                  width="30px"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/diplomat_4100" target="_blank">
+                <img
+                  src="../images/telegram_icon.png"
+                  alt="Telegram"
+                  width="30px"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container">
+      <form id="searchForm" class="searchForm">
+        <input
+          type="search"
+          class="search"
+          id="searchInput"
+          placeholder="Kitob qidiring..."
+        />
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2 class="card-title">Kitob Qo'shish</h2>
+        <form id="addBookForm" class="addBookForm">
+          <div class="form-group">
+            <label for="bookTitle">Kitob Nomi</label>
+            <input
+              type="text"
+              id="bookTitle"
+              placeholder="Kitob nomini kiriting"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookAuthor">Muallif</label>
+            <input
+              type="text"
+              id="bookAuthor"
+              placeholder="Muallif ismini kiriting"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookYear">Chop etilgan sana</label>
+            <input
+              type="number"
+              id="bookYear"
+              placeholder="Chop etilgan yilni kiriting"
+            />
+          </div>
+          <button type="submit" class="btn-submit">Qo'shish</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="bookList" class="book-list"></div>
+      <div id="loading" style="display: none">
+        <div class="loading-overlay">
+          <p>Loading...</p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/home.js"></script>
+  </body>
+</html>

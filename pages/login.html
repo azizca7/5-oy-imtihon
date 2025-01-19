@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="kirish active">Kirish Formasi</div>
+        <div class="royxatdan-otish">Ro'yxatdan O'tish Formasi</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="kirish" checked />
+          <input type="radio" name="slide" id="royxatdan-otish" />
+          <label for="kirish" class="slide kirish">Kirish</label>
+          <label for="royxatdan-otish" class="slide royxatdan-otish"
+            >Ro'yxatdan O'tish</label
+          >
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form class="kirish">
+            <div class="field">
+              <input type="text" placeholder="Email manzil" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Parol" required />
+            </div>
+          
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Kirish" />
+            </div>
+            <div class="signup-link">
+              Ro'yxatdan o'tmaganmisiz? <a href="">Endi ro'yxatdan o'ting</a>
+            </div>
+          </form>
+          <form class="royxatdan-otish">
+            <div class="field">
+              <input type="text" placeholder="Email manzil" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Parol" required />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="Parolni tasdiqlang"
+                required
+              />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Ro'yxatdan o'tish" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
