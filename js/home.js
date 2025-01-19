@@ -103,6 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       addBook(bookData);
     }
+
+    addBookForm.reset();
   });
 });
 
